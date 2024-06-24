@@ -1,0 +1,316 @@
+body{
+    font-family: Arial, sans-serif;
+    overflow-x: hidden
+}
+.header{
+    display: grid;
+    justify-content: right;
+    grid-template-columns: 49px 68px 43px 40px;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.apps-icon{
+    width: 20px;
+    margin-top: 2px ;
+
+}
+.profile-pic{
+    width: 33px;
+    height: 33px;
+    border-radius: 16.5px;
+}
+.linkk{
+    text-decoration: none;
+    color: black;
+    font-size: 12.8px;
+}
+
+.linkk-Div{
+    margin-bottom: 3px;
+}
+
+.google-logo-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.google-logo{
+    display: block;
+    margin: auto;
+    margin-top: 87.5px;
+}
+
+.main-searchbox{
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.searchbox{
+    display: flex;
+    flex: 1;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    height: 44px;
+    padding-right: 12px;
+    padding-bottom: 2px;
+    max-width: 569px;
+    margin: 0 auto;
+    margin-top: 26px;
+}
+
+.searchbar{ 
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    border-radius: 24px;
+    padding-left: 5px;
+    width: 80%;
+}
+
+.searchbox:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 14px ;
+    margin-top: 12px;
+}
+
+.search-div{
+    display: inline-block;
+}
+
+.voice-search-icon {
+    width: 18px; 
+    padding-bottom:0.29px ;
+}
+
+.google-lens-icon{
+    width: 24px;
+}
+
+.voice-Search-button, .google-lens-button{  
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    width: 24px;
+    line-height: 44px;
+    position: relative;
+}
+
+.voice-Search-button::after {
+    content: "Search by voice";
+    position: absolute;
+    bottom: -33px; /* Adjust as needed to position below the button */
+    left: -40px;
+    background-color: black;
+    color: #fff;
+    padding: 5px 10px; /* Adjust padding for readability */
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.6;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.voice-Search-button::before {
+    content: "";
+    position: absolute;
+    bottom: -4px; /* Adjust to align with tooltip */
+    left: 12px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent ; /* Arrow pointing up */
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.voice-Search-button:hover::after,
+.voice-Search-button:hover::before,.google-lens-button:hover::after,
+.google-lens-button:hover::before {
+    opacity: 1;
+}
+
+.google-lens-button::after {
+    content: "Search by image";
+    position: absolute;
+    bottom: -33px; /* Adjust as needed to position below the button */
+    left: -40px;
+    background-color: black;
+    color: #fff;
+    padding: 5px 10px; /* Adjust padding for readability */
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.6;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.google-lens-button::before {
+    content: "";
+    position: absolute;
+    bottom: -4px; /* Adjust to align with tooltip */
+    left: 17px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent ; /* Arrow pointing up */
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+@media only screen and (max-width: 683px) {
+    .voice-Search-button, .google-lens-button {
+        margin: 11.8px;
+    }
+    .voice-Search-button{
+        margin-right: 2px;
+    }
+}
+
+.two-Buttons{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px ;
+}
+
+.Lucky-Search-Button, .Google-Search-Button{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 5.8px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Lucky-Search-Button:hover, .Google-Search-Button:hover{
+    border: 1px solid #d5d5da;
+    box-shadow: 0px 1px 3px rgba(125, 125, 121, 0.3);
+}
+
+.offered{
+    display: block;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: auto;
+    font-size: small;
+    margin-top: 9px ;
+    margin-bottom: 24px;
+    margin-left:-12px ;
+    margin-right: -9px;
+    line-height: 0.2px;
+}
+
+.languages, .Google-offered{
+    display: inline-block;
+    font-size: 13px;  
+}
+
+.Google-offered{
+    display: inline-block;
+    color: #4d5156;
+}
+
+.languages{
+    padding:3px;
+    color: #1a0dab;
+}
+
+.languages:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main-footer{
+    display: flex;
+    flex-shrink: 0;
+}
+
+.footer{
+    background-color: #f0f0f0;
+    border-bottom-color: rgb(218, 220, 224);
+    border-bottom-style: solid;
+    border-bottom-width: 0.8px;
+    color: rgb(32, 33, 36);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    bottom: 47px;
+    font-size: 15px;
+}
+
+.footer2{
+    background-color: #f0f0f0;
+    border-bottom-color: rgb(218, 220, 224);
+    border-bottom-style: solid;
+    border-bottom-width: 0.8px;
+    color: rgb(32, 33, 36);
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 30px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+}
+.left-section, .right-section{
+    display: flex;
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer2 {
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 683px) {
+    .footer {
+        bottom: 94px;
+    }
+}
+
+.lucky-Button-Link{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-Links{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+.footer-Links:hover{
+    text-decoration: underline;
+}
